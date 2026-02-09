@@ -9,8 +9,8 @@ export default function Componnent({enquiryList, getEnquiry, setformData}) {
     .then((res)=>{
       console.log(res);
       toast.warning('successfully deleted');
+      getEnquiry()
     })
-    getEnquiry()
   }
   //edit
   let editRow = (editId)=>{
