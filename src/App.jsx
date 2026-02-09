@@ -41,6 +41,7 @@ function App() {
       axios.post(`http://localhost:3000/website/api/insert`, formData)
     .then(()=>{
       toast.success('Enquiry Save Successfully')
+      getEnquiry()
     })
       setformData({
         name:'',
@@ -48,7 +49,6 @@ function App() {
         phone:'',
         message:''
       })
-      getEnquiry()
    }
     }
     
